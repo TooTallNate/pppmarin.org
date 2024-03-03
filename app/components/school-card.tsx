@@ -16,11 +16,11 @@ export function SchoolCard({
     <a
       href={href}
       target="_blank"
-      className="flex flex-col w-72 border border-gray-200 rounded-lg shadow items-center bg-white m-2 p-2 hover:bg-blue-100 text-center transition-colors"
+      className="flex flex-col w-72 rounded-lg shadow-sm border hover:shadow-md items-center bg-white m-2 p-2 hover:bg-blue-100 text-center transition-all"
     >
       <Image src={image} alt={name} width={200} height={200} />
       <p className="pt-4">{name}</p>
-      <p>
+      <p className="text-sm italic">
         {street}
         <br />
         {city}
