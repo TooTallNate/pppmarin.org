@@ -9,13 +9,13 @@ import twincitiescoop from '@/public/twincitiescoop.png';
 
 export default function OurSchools() {
     return (
-      <main className="flex flex-col items-center justify-between p-12 max-w-5xl text-center">
+      <>
         <Heading>Our Schools</Heading>
-        <p>
+        <p className="px-1 md:px-0">
           There are currently five schools that are members of the Marin County
           Council of Parent Participation Nursery Schools.
         </p>
-        <p className="pt-2">You may view their locations on the map below:</p>
+        <p className="px-1 md:px-0 pt-2">You may view their locations on the map below:</p>
         <div className="w-full h-[480px] overflow-hidden relative m-6">
           <iframe
             src="https://www.google.com/maps/d/embed?mid=10c97h-UNnrheJjxvA8ccL5uzG1FOT54&ehbc=2E312F&z=10"
@@ -61,6 +61,6 @@ export default function OurSchools() {
             city="Corte Madera, CA 94925"
           />
         </div>
-      </main>
+      </>
     );
   }

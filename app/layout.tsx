@@ -21,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} flex flex-col items-center`}>
         <Header />
-        {children}
+        <main className="flex flex-col items-center py-8 md:px-12 max-w-5xl text-center">
+          {children}
+        </main>
         <Footer />
         <Analytics />
       </body>

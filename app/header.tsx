@@ -24,10 +24,10 @@ export function Header () {
             Join us!
           </a>
         </div>
-        <div className="flex justify-between items-center p-4">
+        <div className="flex justify-between items-center p-1 md:p-4">
           <div className="flex items-center">
             <Image src={ppcns} alt="PPCNS" height={75} />
-            <h2 className="pl-3 text-lg w-72 font-medium">
+            <h2 className="pl-1 md:pl-3 text-sm md:text-lg w-40 md:w-72 font-medium">
               Marin County Council of Parent Participation Nursery Schools
             </h2>
           </div>
