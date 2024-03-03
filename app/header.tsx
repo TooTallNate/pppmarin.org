@@ -1,6 +1,8 @@
 import Image from "next/image";
 
+import ppcns from '@/public/ppcns.png';
 import playisenough from '@/public/playisenough.png';
+import { Menu } from "@/app/components/menu";
 
 export function Header () {
     return (
@@ -22,7 +24,15 @@ export function Header () {
             Join us!
           </a>
         </div>
-        <h2>Marin County Council of Parent Participation Nursery Schools</h2>
+        <div className="flex justify-between items-center p-4">
+          <div className="flex items-center">
+            <Image src={ppcns} alt="PPCNS" height={75} />
+            <h2 className="pl-3 text-lg w-72 font-medium">
+              Marin County Council of Parent Participation Nursery Schools
+            </h2>
+          </div>
+          <Menu />
+        </div>
       </header>
     );
 }
