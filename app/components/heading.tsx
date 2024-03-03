@@ -1,13 +1,15 @@
 export function Heading({
-  children,
-  className = "",
+	children,
+	className = '',
 }: {
-  children: React.ReactNode;
-  className?: string;
+	children: React.ReactNode;
+	className?: string;
 }) {
-  return (
-    <h1 className={`text-3xl md:text-5xl lg:text-6xl px-10 text-center font-bold pb-4 md:pb-8 ${className}`}>
-      {children}
-    </h1>
-  );
+	return (
+		<h1
+			className={`text-3xl md:text-5xl lg:text-6xl px-10 text-center font-bold pb-4 md:pb-6 lg:pb-8 ${className}`}
+		>
+			{children}
+		</h1>
+	);
 }
