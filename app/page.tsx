@@ -4,7 +4,7 @@ import { Heading } from "@/app/components/heading";
 export default function Home() {
   return (
     <>
-      <Heading>Marin County Council of Parent Participation Nursery Schools</Heading>
+      <Heading>Welcome to PPP Marin</Heading>
     </>
   );
 }

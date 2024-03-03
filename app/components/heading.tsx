@@ -6,7 +6,7 @@ export function Heading({
   className?: string;
 }) {
   return (
-    <h1 className={`text-3xl md:text-6xl px-10 text-center font-bold pb-8 ${className}`}>
+    <h1 className={`text-3xl md:text-5xl lg:text-6xl px-10 text-center font-bold pb-4 md:pb-8 ${className}`}>
       {children}
     </h1>
   );

@@ -11,12 +11,12 @@ export default function OurSchools() {
     return (
       <>
         <Heading>Our Schools</Heading>
-        <p className="px-1 md:px-0">
+        <p className="px-2 md:px-0">
           There are currently five schools that are members of the Marin County
           Council of Parent Participation Nursery Schools.
         </p>
-        <p className="px-1 md:px-0 pt-2">You may view their locations on the map below:</p>
-        <div className="w-full h-[480px] overflow-hidden relative m-6">
+        <p className="px-2 md:px-0 pt-2">You may view their locations on the map below:</p>
+        <div className="w-full h-[480px] overflow-hidden relative m-6 shadow-blackA4 shadow-lg">
           <iframe
             src="https://www.google.com/maps/d/embed?mid=10c97h-UNnrheJjxvA8ccL5uzG1FOT54&ehbc=2E312F&z=10"
             width="100%"
@@ -29,7 +29,7 @@ export default function OurSchools() {
             image={cccmarin}
             href="https://www.cccmarin.org"
             name="Children's Cottage Co-Op"
-            street="2900 Larkspur Landing Circlie"
+            street="2900 Larkspur Landing Circle"
             city="Larkspur, CA 94939"
           />
           <SchoolCard
@@ -49,7 +49,7 @@ export default function OurSchools() {
           <SchoolCard
             image={sananselmocoop}
             href="https://www.sananselmocoop.org"
-            name="San Anselmo Cooperative Nursery School"
+            name="San Anselmo Co-Op Nursery School"
             street="24 Myrtle Lane"
             city="San Anselmo, CA 94960"
           />

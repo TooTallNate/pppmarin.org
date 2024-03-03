@@ -7,7 +7,7 @@ import { Menu } from "@/app/components/menu";
 export function Header () {
     return (
       <header className="flex flex-col justify-between w-full">
-        <div className="bg-slate-800 text-white w-full text-center py-1 flex items-center justify-center px-3">
+        <div className="bg-slate-800 text-white w-full text-center py-2 md:py-1 flex items-center justify-center px-3">
           <Image
             src={playisenough}
             alt="Play is Enough"
@@ -24,10 +24,10 @@ export function Header () {
             Join us!
           </a>
         </div>
-        <div className="flex justify-between items-center p-1 md:p-4">
+        <div className="flex justify-between items-center p-2 md:p-4">
           <div className="flex items-center">
             <Image src={ppcns} alt="PPCNS" height={75} />
-            <h2 className="pl-1 md:pl-3 text-sm md:text-lg w-40 md:w-72 font-medium">
+            <h2 className="pl-2 md:pl-3 text-sm md:text-lg w-40 md:w-72 font-medium">
               Marin County Council of Parent Participation Nursery Schools
             </h2>
           </div>
