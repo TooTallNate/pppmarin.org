@@ -38,7 +38,7 @@ export default function Keynotes() {
 					both children and adults.
 				</p>
 			</Keynote>
-			<hr className='bg-convention-sunset border-0 w-24 h-px' />
+			<hr className='bg-convention-sunset border-0 w-32 h-px my-8' />
 			<Keynote
 				day='Saturday'
 				name='Julie Nicholson, Ph.D, MBA'
