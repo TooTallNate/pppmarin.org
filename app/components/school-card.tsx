@@ -17,6 +17,7 @@ export function SchoolCard({
 		<a
 			href={href}
 			target='_blank'
+			rel='noreferrer'
 			className='flex flex-col w-72 rounded-lg shadow-sm border hover:shadow-md items-center bg-white m-2 p-2 hover:bg-blue-100 text-center transition-all'
 		>
 			<Image src={image} alt={name} width={200} height={200} />

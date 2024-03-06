@@ -20,11 +20,12 @@ export default function OurSchools() {
 			</p>
 			<div className='w-full h-[480px] overflow-hidden relative m-6 shadow-slate-300 border border-slate-400 border-x-0 md:border-x shadow-lg'>
 				<iframe
+					title='map'
 					src='https://www.google.com/maps/d/embed?mid=10c97h-UNnrheJjxvA8ccL5uzG1FOT54&ehbc=2E312F&z=10'
 					width='100%'
 					height='550'
 					className='absolute top-[-70px]'
-				></iframe>
+				/>
 			</div>
 			<div className='flex flex-wrap grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-4 justify-center'>
 				<SchoolCard

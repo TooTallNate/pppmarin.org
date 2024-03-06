@@ -16,6 +16,15 @@ const config: Config = {
 				...violet,
 				...purple,
 				...indigo,
+				'convention-peachcream': '#faf2e9',
+				'convention-sunset': '#ff7958',
+				'convention-golden': '#ffc950',
+				'convention-sunflower': '#ffde59',
+			},
+			fontFamily: {
+				sans: ['var(--font-geist-sans)'],
+				montserrat: ['var(--font-montserrat)'],
+				agrandir: ['var(--font-agrandir)'],
 			},
 			keyframes: {
 				enterFromRight: {
@@ -35,12 +44,18 @@ const config: Config = {
 					to: { opacity: '0', transform: 'translateX(-200px)' },
 				},
 				scaleIn: {
-					from: { opacity: '0', transform: 'rotateX(-10deg) scale(0.9)' },
+					from: {
+						opacity: '0',
+						transform: 'rotateX(-10deg) scale(0.9)',
+					},
 					to: { opacity: '1', transform: 'rotateX(0deg) scale(1)' },
 				},
 				scaleOut: {
 					from: { opacity: '1', transform: 'rotateX(0deg) scale(1)' },
-					to: { opacity: '0', transform: 'rotateX(-10deg) scale(0.95)' },
+					to: {
+						opacity: '0',
+						transform: 'rotateX(-10deg) scale(0.95)',
+					},
 				},
 				fadeIn: {
 					from: { opacity: '0' },

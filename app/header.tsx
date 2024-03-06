@@ -17,6 +17,7 @@ export function Header() {
 				<a
 					href='https://ccppns.org/convention-info#/conventionplayisenough2024/'
 					target='_blank'
+					rel='noreferrer'
 					className='hover:underline flex-shrink'
 				>
 					Marin is hosting the <span className='font-bold'>Play is Enough</span>{' '}
