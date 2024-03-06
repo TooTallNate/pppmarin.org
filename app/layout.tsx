@@ -21,6 +21,7 @@ const agrandir = localFont({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://pppmarin.org'),
 	title: 'Marin County Council of Parent Participation Nursery Schools',
 	description: '',
 };
