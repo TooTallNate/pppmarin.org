@@ -23,6 +23,10 @@ export default async function Image() {
     (res) => res.arrayBuffer(),
   );
 
+  // @ts-expect-error
+  // eslint-disable-next-line @next/next/no-img-element
+  const img = <img src={imageData} width={436} height={300} alt="asd" />
+
   return new ImageResponse(
 		(
 			// ImageResponse JSX element
@@ -49,8 +53,7 @@ export default async function Image() {
 						background: "#ff7958",
 					}}
 				/>
-				{/* eslint-disable-next-line @next/next/no-img-element */}
-				<img src={imageData} width={436} height={300} alt="asd" />
+				{img}
 				<span style={{ color: "#ff7958", paddingTop: "3rem" }}>
 					CONVENTION
 				</span>
