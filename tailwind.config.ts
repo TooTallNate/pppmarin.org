@@ -20,6 +20,7 @@ const config: Config = {
 				'convention-sunset': '#ff7958',
 				'convention-golden': '#ffc950',
 				'convention-sunflower': '#ffde59',
+				'convention-sunbeam': '#ffe88e',
 			},
 			fontFamily: {
 				sans: ['var(--font-geist-sans)'],
