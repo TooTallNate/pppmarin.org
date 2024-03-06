@@ -2,7 +2,13 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-function Text({ small, children }: any) {
+function Text({
+	small,
+	children,
+}: {
+	children: React.ReactNode;
+	small: string;
+}) {
 	return (
 		<>
 			<span className='md:hidden'>{small}</span>
@@ -28,7 +34,13 @@ export function TableOfContents() {
 	);
 }
 
-function TocLi({ children, href }: any) {
+function TocLi({
+	children,
+	href,
+}: {
+	children: React.ReactNode;
+	href: string;
+}) {
 	const pathname = usePathname();
 	const active = pathname === href;
 	const bgColor = active

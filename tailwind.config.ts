@@ -16,6 +16,7 @@ const config: Config = {
 				...violet,
 				...purple,
 				...indigo,
+				'convention-tangerine': '#f79d25',
 				'convention-peachcream': '#faf2e9',
 				'convention-sunset': '#ff7958',
 				'convention-golden': '#ffc950',
