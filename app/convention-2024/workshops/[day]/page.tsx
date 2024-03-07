@@ -1,11 +1,17 @@
-'use server';
 import { data, type Workshop as IWorkshop } from '../../data';
+
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+	return [{ day: 'friday' }, { day: 'saturday' }];
+}
 
 export default async function WorkshopsDayPage({
 	params,
 }: {
 	params: { day: string };
 }) {
+	'use server';
 	const workshops = data.workshops.filter((w) => w.day === params.day);
 	return (
 		<div className='flex flex-col'>
