@@ -1,3 +1,5 @@
+import { Address } from './address';
+
 export default function Welcome() {
 	return (
 		<section className='w-screen bg-convention-sunflower p-6 md:p-12 pt-16 flex flex-col items-center'>
@@ -18,25 +20,9 @@ export default function Welcome() {
 					every attendee.
 				</p>
 			</div>
-			<Address />
+			<div className='pt-10'>
+				<Address />
+			</div>
 		</section>
-	);
-}
-
-function Address() {
-	return (
-		<a
-			href='https://maps.app.goo.gl/hgerBtDUmPEdMa93A'
-			target='_blank'
-			rel='noreferrer'
-			className='font-montserrat mt-14 hover:underline'
-		>
-			Embassy Suites
-			<br />
-			101 McInnis Parkway
-			<br />
-			San Rafael, CA
-			<br />
-		</a>
 	);
 }
