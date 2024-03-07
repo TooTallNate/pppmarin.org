@@ -2,33 +2,14 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-function Text({
-	small,
-	children,
-}: {
-	children: React.ReactNode;
-	small: string;
-}) {
-	return (
-		<>
-			<span className='md:hidden'>{small}</span>
-			<span className='hidden md:inline'>{children}</span>
-		</>
-	);
-}
-
 export function TableOfContents() {
 	return (
 		<div className='w-screen bg-convention-golden flex justify-center pb-7 shadow-md relative'>
-			<ol className='grid grid-cols-2 sm:grid-cols-3 justify-center gap-6 font-black max-w-screen-sm'>
+			<ol className='grid grid-cols-2 sm:grid-cols-3 justify-center gap-6 max-w-screen-sm'>
 				<TocLi href='/convention-2024'>Welcome</TocLi>
 				<TocLi href='/convention-2024/keynotes/friday'>Keynotes</TocLi>
-				<TocLi href='/convention-2024/workshops'>
-					<Text small='Workshops'>Workshops</Text>
-				</TocLi>
-				<TocLi href='/convention-2024/speakers'>
-					<Text small='Speakers'>Speakers</Text>
-				</TocLi>
+				<TocLi href='/convention-2024/workshops/friday'>Workshops</TocLi>
+				<TocLi href='/convention-2024/speakers'>Speakers</TocLi>
 				<TocLi href='/convention-2024/venue'>Venue</TocLi>
 				<TocLi href='/convention-2024/vendors'>Vendors</TocLi>
 			</ol>
@@ -52,7 +33,7 @@ export function TocLi({
 		: 'bg-convention-peachcream text-slate-800 hover:bg-convention-sunbeam border-grey-200';
 	return (
 		<li
-			className={`border font-bold font-montserrat rounded-md shadow-md relative ${bgColor} transition-all`}
+			className={`border font-montserrat rounded-md shadow-md relative ${bgColor} transition-all`}
 		>
 			<Link href={href} className='w-full h-full'>
 				<div className='p-2'>{children}</div>

@@ -1,3 +1,5 @@
-export default function Workshops() {
-	return <div>Workshops</div>;
+import { redirect } from 'next/navigation';
+
+export default async function Keynotes() {
+	redirect('workshops/friday');
 }
