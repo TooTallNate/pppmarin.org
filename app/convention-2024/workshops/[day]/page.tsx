@@ -26,9 +26,9 @@ function Workshop({ workshop }: { workshop: IWorkshop }) {
 	const speakers = Array.isArray(workshop.speakers)
 		? workshop.speakers
 		: [workshop.speaker];
-	// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 	const desc = workshop.description
 		.split('\n')
+		// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 		.map((l, i) => <p key={i}>{l}</p>);
 	return (
 		<div className='flex flex-col gap-2 font-montserrat font-normal'>
