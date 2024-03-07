@@ -29,8 +29,8 @@ export default async function Keynote({
 		// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 		.map((p, i) => <p key={i}>{p}</p>);
 	return (
-		<div className='flex flex-col gap-8'>
-			<div className='flex flex-col md:flex-row gap-8 items-center pt-8'>
+		<div className='flex flex-col gap-8 pt-14 justify-center'>
+			<div className='flex flex-col md:flex-row gap-8 items-center justify-center'>
 				<div className='flex flex-col gap-6 items-center justify-center font-semibold'>
 					<h2 className='text-convention-sunset text-5xl'>
 						{`${params.day[0].toUpperCase()}${params.day.slice(1)}`}

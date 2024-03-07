@@ -48,11 +48,11 @@ export function TocLi({
 	const pathname = usePathname().split('/').slice(0, parts).join('/');
 	const active = pathname === href.split('/').slice(0, parts).join('/');
 	const bgColor = active
-		? 'bg-convention-sunset text-convention-peachcream'
-		: 'bg-convention-peachcream text-slate-800 hover:bg-convention-sunbeam';
+		? 'bg-convention-sunset text-convention-peachcream border-convention-peachcream'
+		: 'bg-convention-peachcream text-slate-800 hover:bg-convention-sunbeam border-grey-200';
 	return (
 		<li
-			className={`font-bold font-montserrat rounded-md shadow-md relative ${bgColor} transition-all`}
+			className={`border font-bold font-montserrat rounded-md shadow-md relative ${bgColor} transition-all`}
 		>
 			<Link href={href} className='w-full h-full'>
 				<div className='p-2'>{children}</div>
