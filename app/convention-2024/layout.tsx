@@ -11,7 +11,7 @@ export default function Convention2024({
 }) {
 	return (
 		<>
-			<div className='flex flex-col items-center bg-convention-golden pt-8 w-screen relative '>
+			<div className='flex flex-col items-center bg-convention-golden pt-8 w-screen relative'>
 				<div className='absolute top-0 left-0 h-[48%] sm:h-[55%] lg:h-1/2 w-full bg-convention-sunset' />
 				<Image
 					priority

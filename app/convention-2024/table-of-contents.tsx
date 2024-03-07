@@ -19,30 +19,34 @@ function Text({
 
 export function TableOfContents() {
 	return (
-		<div className='w-screen bg-convention-golden flex justify-center py-4'>
-			<ol className='grid grid-cols-2 md:flex md:flex-wrap justify-center gap-6 font-black'>
+		<div className='w-screen bg-convention-golden flex justify-center pb-7 shadow-md relative'>
+			<ol className='grid grid-cols-2 sm:grid-cols-3 justify-center gap-6 font-black max-w-screen-sm'>
 				<TocLi href='/convention-2024'>Welcome</TocLi>
-				<TocLi href='/convention-2024/keynotes'>Keynotes</TocLi>
+				<TocLi href='/convention-2024/keynotes/friday'>Keynotes</TocLi>
 				<TocLi href='/convention-2024/workshops'>
-					<Text small='Workshops'>Workshop Descriptions</Text>
+					<Text small='Workshops'>Workshops</Text>
 				</TocLi>
 				<TocLi href='/convention-2024/speakers'>
-					<Text small='Speakers'>Meet Our Speakers</Text>
+					<Text small='Speakers'>Speakers</Text>
 				</TocLi>
+				<TocLi href='/convention-2024/venue'>Venue</TocLi>
+				<TocLi href='/convention-2024/vendors'>Vendors</TocLi>
 			</ol>
 		</div>
 	);
 }
 
-function TocLi({
+export function TocLi({
 	children,
 	href,
+	parts = 3,
 }: {
 	children: React.ReactNode;
 	href: string;
+	parts?: number;
 }) {
-	const pathname = usePathname();
-	const active = pathname === href;
+	const pathname = usePathname().split('/').slice(0, parts).join('/');
+	const active = pathname === href.split('/').slice(0, parts).join('/');
 	const bgColor = active
 		? 'bg-convention-sunset text-convention-peachcream'
 		: 'bg-convention-peachcream text-slate-800 hover:bg-convention-sunbeam';

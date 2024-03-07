@@ -1,3 +1,3 @@
 export default function Workshops() {
-    return <div>Workshops</div>
+	return <div>Workshops</div>;
 }
