@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import { type KeynoteSpeaker, getSpeakers } from '../../data';
+import { type KeynoteSpeaker, data } from '../../data';
 
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-	const speakers = await getSpeakers();
-	const keynotes = speakers
+	const keynotes = data.speakers
 		.filter((s) => 'keynote' in s)
 		.map((s) => ({ day: (s as KeynoteSpeaker).keynote }));
 	return keynotes;
@@ -17,8 +16,7 @@ export default async function Keynote({
 	params: { day: string };
 }) {
 	'use server';
-	const speakers = await getSpeakers();
-	const speaker = speakers.find(
+	const speaker = data.speakers.find(
 		(s) => 'keynote' in s && s.keynote === params.day,
 	) as KeynoteSpeaker | undefined;
 	if (!speaker) {

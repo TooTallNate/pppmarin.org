@@ -1,12 +1,11 @@
-import { getData, type Workshop as IWorkshop } from '../../data';
+'use server';
+import { data, type Workshop as IWorkshop } from '../../data';
 
 export default async function WorkshopsDayPage({
 	params,
 }: {
 	params: { day: string };
 }) {
-	'use server';
-	const data = await getData();
 	const workshops = data.workshops.filter((w) => w.day === params.day);
 	return (
 		<div className='flex flex-col'>
