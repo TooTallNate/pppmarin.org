@@ -370,7 +370,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
-			speakers: ['Jessica Diaz France, LCSW'],
+			speakers: ['Jennifer Curtis'],
 			title: 'Educaring® as a Foundation for Play and Lifelong Learning',
 			description:
 				'An introduction to the Educaring® Approach to caregiving in the early years (0 - 6) with a focus on play as an essential element of human development. The lifelong benefits of practicing the Educaring principles of Time for Uninterrupted Play and Freedom to Explore, plus tips for providing an environment that invites and supports authentic, child-initiated play in the early years, will be shared along with a general overview of the Educaring Approach to parenting and caregiving as originated by Magda Gerber, founder of Resources for Infant Educarers® (RIE®).\n*Please note this workshop is being offered twice!',
