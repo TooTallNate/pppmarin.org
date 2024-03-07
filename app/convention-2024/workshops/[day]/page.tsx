@@ -12,7 +12,7 @@ export default async function WorkshopsDayPage({
 			<h3 className='font-agrandir uppercase text-convention-golden text-3xl pb-8 pt-12'>
 				{params.day} Workshops
 			</h3>
-			<div className='flex flex-col gap-12'>
+			<div className='flex flex-col gap-16'>
 				{workshops.map((w) => (
 					<Workshop key={w.title} workshop={w} />
 				))}
@@ -30,7 +30,7 @@ function Workshop({ workshop }: { workshop: IWorkshop }) {
 		// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 		.map((l, i) => <p key={i}>{l}</p>);
 	return (
-		<div className='flex flex-col gap-2 font-montserrat font-normal'>
+		<div className='flex flex-col gap-4 font-montserrat font-normal'>
 			<h4 className='uppercase text-convention-sunset font-bold'>
 				{workshop.title}
 			</h4>
