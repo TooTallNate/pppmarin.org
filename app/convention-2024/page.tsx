@@ -6,7 +6,7 @@ export default function Welcome() {
 			<h3 className='uppercase font-agrandir text-convention-sunset text-4xl py-3'>
 				Welcome
 			</h3>
-			<div className='max-w-screen-sm bg-convention-peachcream p-6 flex flex-col items-center gap-4 font-montserrat shadow-lg selection:bg-convention-sunset/50'>
+			<div className='max-w-screen-sm bg-convention-peachcream p-6 flex flex-col items-center gap-4 font-montserrat shadow-lg'>
 				<p className='max-w-screen-sm'>
 					Welcome to{' '}
 					<span className='italic font-extrabold'>Play is Enough</span>, the

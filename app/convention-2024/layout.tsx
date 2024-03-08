@@ -10,9 +10,9 @@ export default function Convention2024({
 	children: React.ReactNode;
 }) {
 	return (
-		<>
+		<div className='selection:bg-convention-sunset/50'>
 			<div className='flex flex-col items-center bg-convention-golden pt-8 w-screen relative'>
-				<div className='absolute top-0 left-0 h-[48%] sm:h-[55%] lg:h-1/2 w-full bg-convention-sunset' />
+				<div className='absolute top-0 left-0 h-[48%] sm:h-[55%] lg:h-1/2 w-full bg-convention-sunset ' />
 				<Image
 					priority
 					src={playisenough}
@@ -27,6 +27,6 @@ export default function Convention2024({
 			</div>
 			<TableOfContents />
 			{children}
-		</>
+		</div>
 	);
 }
