@@ -23,7 +23,7 @@ export default function Venue() {
 				<h4 className='font-montserrat font-bold text-lg sm:text-xl py-8'>
 					Thanks to all of our other sponsors
 				</h4>
-				<div className='flex flex-wrap gap-8 items-center justify-center'>
+				<div className='grid grid-cols-2 sm:flex sm:flex-wrap gap-8 items-center justify-center'>
 					<a
 						href='https://www.danthehealer.com/services'
 						target='_blank'
