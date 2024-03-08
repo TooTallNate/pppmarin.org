@@ -8,7 +8,7 @@ function Speaker({ speaker }: { speaker: ISpeaker }) {
 	return (
 		<Link
 			href={`/convention-2024/speakers/${slug}`}
-			className='flex gap-8 hover:underline decoration-convention-tangerine items-center'
+			className='flex gap-8 hover:underline decoration-convention-tangerine items-center outline-none'
 		>
 			<Image
 				src={`/convention-2024/speakers/${speaker.image}`}
