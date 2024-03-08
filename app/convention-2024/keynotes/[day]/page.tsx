@@ -35,6 +35,9 @@ export default async function Keynote({
 						<br />
 						Keynote
 					</h2>
+					<h3 className='uppercase font-bold text-gray-600 text-3xl'>
+						{speaker.time}
+					</h3>
 					<h3 className='text-convention-tangerine text-2xl'>{speaker.name}</h3>
 				</div>
 				<Image

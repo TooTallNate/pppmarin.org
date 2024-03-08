@@ -1,13 +1,11 @@
-import slugify from 'slugify';
-import { type Speaker as ISpeaker, data } from '../../data';
+import { data } from '../../data';
 import { toSlug } from '../slug';
 import Image from 'next/image';
 
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-	const speakers = data.speakers.filter((s) => !('keynote' in s)) as ISpeaker[];
-	return speakers.map((s) => ({ name: toSlug(s.name) }));
+	return data.speakers.map((s) => ({ name: toSlug(s.name) }));
 }
 
 export default async function SpeakerPage({

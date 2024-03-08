@@ -6,10 +6,12 @@ export interface Speaker {
 
 export interface KeynoteSpeaker extends Speaker {
 	keynote: string;
+	time: string;
 }
 
 export interface Workshop {
 	day: string;
+	time: string;
 	speakers?: string[];
 	speaker?: string;
 	title: string;
@@ -25,6 +27,7 @@ export const data: {
 			name: 'Miriam Beloglovsky, M.A.',
 			image: 'Miriam Beloglovsky.png',
 			keynote: 'friday',
+			time: '9:55-11:05',
 			description:
 				"As a professor of early childhood education, sought-after public speaker, CEO of Playful Transformation, and author, Miriam Beloglovsky’s goal is to engage, inspire, and motivate audiences worldwide to explore the power of play and embrace play as a vehicle that transforms their life.  Miriam is the author of the “Loose Parts” book series, which showcases her advocacy for play with unscripted materials.\nMiriam’s keynote, Just Play: Rekindling Adult Creativity, delves into the dynamic tapestry of adulthood, where amidst our roles and responsibilities, the concept of 'play' often gets lost or dismissed as frivolous. Yet, \"Just Play\" is a testament to the profound importance of play in adult life, underscoring how it is beneficial and essential for fostering creativity, adaptiveness, and holistic well-being.\nPlay is not just an act; it's a state of being that can elevate every facet of life. By harnessing play's joy and unbound potential, adults can rediscover their childhood genius — the spark of transformation and creativity that can change the world. \"Just Play\" is more than a keynote; it's an invitation, a call to action for adults to reengage with their innate playful spirits, a quality we often attribute solely to childhood. This insightful workshop explores how play can catalyze transformational growth for both children and adults.",
 		},
@@ -32,6 +35,7 @@ export const data: {
 			name: 'Julie Nicholson, Ph.D, MBA',
 			image: 'Julie Nicholson.jpg',
 			keynote: 'saturday',
+			time: '9:00-10:15',
 			description:
 				'Dr. Julie Nicholson is an early learning champion, a former preschool and kindergarten teacher, a parent of three daughters and a former parent and President of a Bay Area parent participation preschool. She was a Professor of Practice at Mills College in Oakland for 17 years where she directed several innovative programs including the Leadership Program in Early Childhood, a Joint MBA/MA Educational Leadership Program and the Center for Global Play Research. Dr. Nicholson is co-author of 13 books and many journal articles. Her most recent books include The Powerful Role of Play in Education and Creating Equitable Early Learning Environments for Young Boys of Color: Disrupting Disproportionate Outcomes (2023; both published by the California Department of Education), Principals as Early Learning Leaders: Effectively Supporting Our Youngest Learners (2022; Teachers College Press) and Supporting Young Children to Cope, Build Resilience and Heal from Trauma through Play: A Practical Guide (2023; Routledge). Her forthcoming book, Reducing Stress in Schools: Trauma-Responsive Strategies to Support Teachers and Students (2024, Harvard Education Press) is focused on PreK-12 teachers and administrators. Julie is currently the Vice President of Implementation and Impact at Children’s Funding Project. She regularly gives keynotes and provides professional development, coaching and mentoring to individuals, agencies, schools/districts, and state leadership teams across the U.S. She has extensive experience participating in policy committees, serving on non-profit Boards, and participating in international policy, research and practice-focused projects.\nDuring her keynote, Dr. Nicholson will guide us in celebrating the powerful role of play in supporting young children’s learning, development, and overall well-being. Weaving together authentic stories, contemporary research, and windows into high quality early learning environments, she will highlight the sights and sounds of powerful learning for preschool-aged children and the complex role of early childhood teachers and families who are entrusted to guide them during a critical time for their brain and body development. Participants will see developmentally informed early learning environments in action. Dr. Nicholson will inspire all of us to see our collective opportunity and responsibility to create inclusive, engaging, equitable and healing play-based environments for our youngest learners.',
 		},
@@ -243,6 +247,7 @@ export const data: {
 	workshops: [
 		{
 			day: 'friday',
+			time: '11:15-12:55',
 			speaker: 'Miriam Beloglovsky, M.A.',
 			title: 'Exploring the Power of Unscripted Materials',
 			description:
@@ -250,6 +255,7 @@ export const data: {
 		},
 		{
 			day: 'friday',
+			time: '11:15-12:00',
 			speaker: 'Jamie Close, MSOT, OTR/L',
 			title: 'Sensory Processing & Behavior',
 			description:
@@ -257,6 +263,7 @@ export const data: {
 		},
 		{
 			day: 'friday',
+			time: '11:15-12:00',
 			speaker: 'Jenna Hermans',
 			title:
 				'Empowering Educators & Parents: Taking Care of You So You Can better take care of others',
@@ -265,6 +272,7 @@ export const data: {
 		},
 		{
 			day: 'friday',
+			time: '11:15-12:00',
 			speaker: 'Kate Lumsden, L.AC',
 			title: 'Hands on healing with east asian medicine & ayurveda',
 			description:
@@ -272,13 +280,7 @@ export const data: {
 		},
 		{
 			day: 'friday',
-			speaker: 'Jamie Close, MSOT, OTR/L',
-			title: 'Movement & learning: How early motor skills influence learning',
-			description:
-				'Play is the work of children. It is through joyful exploration of the world and meaningful interactions that children learn and develop throughout early childhood. Sensory motor skills, which develop through play over the first years of life, lay the foundation for strong social emotional regulation and even for later academic success. This presentation will focus on early motor skills and their impact on learning. Participants will learn fun, playful activities that help facilitate the development of these motor skills.',
-		},
-		{
-			day: 'friday',
+			time: '11:15-12:00',
 			speaker: 'Janna Barkin',
 			title:
 				'Supporting gender expansive/transgender youth in early childhood settings',
@@ -287,6 +289,15 @@ export const data: {
 		},
 		{
 			day: 'friday',
+			time: '12:10-12:55',
+			speaker: 'Jamie Close, MSOT, OTR/L',
+			title: 'Movement & learning: How early motor skills influence learning',
+			description:
+				'Play is the work of children. It is through joyful exploration of the world and meaningful interactions that children learn and develop throughout early childhood. Sensory motor skills, which develop through play over the first years of life, lay the foundation for strong social emotional regulation and even for later academic success. This presentation will focus on early motor skills and their impact on learning. Participants will learn fun, playful activities that help facilitate the development of these motor skills.',
+		},
+		{
+			day: 'friday',
+			time: '12:10-12:55',
 			speaker: 'Janna Barkin',
 			title:
 				'Discussion group for parents, caregivers, family, & friends of transgender, non-binary, or gender questioning children',
@@ -295,6 +306,7 @@ export const data: {
 		},
 		{
 			day: 'friday',
+			time: '2:15-3:55',
 			speaker: 'Taylor Ross',
 			title:
 				're-orienting the difficult moments as opportunities for connection & growth',
@@ -303,6 +315,7 @@ export const data: {
 		},
 		{
 			day: 'friday',
+			time: '2:15-3:55',
 			speaker: 'Taira Restar',
 			title: 'invitation to play! Play! Play!',
 			description:
@@ -310,6 +323,7 @@ export const data: {
 		},
 		{
 			day: 'friday',
+			time: '2:15-3:00',
 			speaker: 'Jamaica Stevens',
 			title: 'learning through music, dance & yoga',
 			description:
@@ -317,6 +331,7 @@ export const data: {
 		},
 		{
 			day: 'friday',
+			time: '2:15-3:00',
 			speaker: 'Diana Tauder',
 			title:
 				'embracing playfulness: cultivating a growth mindset in work & life',
@@ -325,20 +340,23 @@ export const data: {
 		},
 		{
 			day: 'friday',
-			speaker: 'Jessica Long',
-			title: 'perimenopause 101',
-			description:
-				'When it comes to perimenopause, there are LOTS of questions. What exactly is perimenopause? When does it start? How do I know if I am in perimenopause? How long does it last? Why are there SO MANY symptoms? What can I do to feel like myself again? If any of these questions resonate with you, be sure to join the Perimenopause 101 breakout session led by Jessica Long, Hormone Health Coach and founder of Belong Wellness. In this session, tailored for women in their late 30s – early 50s, Jessica will answer all of these questions and discuss how to alleviate your symptoms. Perimenopause can be confusing, challenging and frustrating. But, you are NOT alone and you don’t have to suffer. Join this workshop to learn what exactly is happening with your hormones, how you can alleviate your symptoms and gain a sense of belonging knowing that so many other women are experiencing what you are.',
-		},
-		{
-			day: 'friday',
+			time: '2:15-3:00',
 			speakers: ['Sara O’Neill', 'Alison Tucker, M.ED', 'Donnie Weaver'],
 			title: 'high support needs in the classroom - Q&A',
 			description:
 				"Join a conversation around supporting children and families who have higher needs or challenging behaviors in the classroom. Have you run out of strategies? New or struggling to work with an ABA team or other early interventionists? Bring questions and/or your own wisdom and experiences to share in a deeper conversation around supporting families and children. Slippery Fish Co-op is centered around inclusion - 30-40% of our children have higher needs. We don't have all the answers, but we are here to support a broader conversation.",
 		},
 		{
+			day: 'friday',
+			time: '3:10-3:55',
+			speaker: 'Jessica Long',
+			title: 'perimenopause 101',
+			description:
+				'When it comes to perimenopause, there are LOTS of questions. What exactly is perimenopause? When does it start? How do I know if I am in perimenopause? How long does it last? Why are there SO MANY symptoms? What can I do to feel like myself again? If any of these questions resonate with you, be sure to join the Perimenopause 101 breakout session led by Jessica Long, Hormone Health Coach and founder of Belong Wellness. In this session, tailored for women in their late 30s – early 50s, Jessica will answer all of these questions and discuss how to alleviate your symptoms. Perimenopause can be confusing, challenging and frustrating. But, you are NOT alone and you don’t have to suffer. Join this workshop to learn what exactly is happening with your hormones, how you can alleviate your symptoms and gain a sense of belonging knowing that so many other women are experiencing what you are.',
+		},
+		{
 			day: 'saturday',
+			time: '10:25-12:05',
 			speakers: ['Michele Tyler'],
 			title: 'Using Play to alleviate challenging Behaviors',
 			description:
@@ -346,6 +364,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '10:25-12:05',
 			speakers: ['Oshik Maoz-Metzl'],
 			title:
 				'my body and others: sexual education for parents and teachers of young kids',
@@ -354,6 +373,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '10:25-11:10',
 			speakers: ['Julie Nicholson, Ph.D, MBA'],
 			title:
 				'Supporting young children to Reduce stress, build RESILIENCE & Heal from trauma through play',
@@ -362,6 +382,15 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '10:25-11:10',
+			speakers: ['Michelle Semrad Barrera, M.Ed, M.fA'],
+			title: 'A Play filled approach to early literacy',
+			description:
+				"Play is foremost self-chosen and self-directed. When we observe children's play, we can discover a myriad of ways to expand upon the early literacy work in which they engage while honoring the play. In this workshop, we will examine how we can follow children's lead to foster a passion for language, stories, and learning.",
+		},
+		{
+			day: 'saturday',
+			time: '10:25-11:10',
 			speakers: ['Jessica Diaz France, LCSW'],
 			title:
 				'introduction to the be body positive model for educators and parents',
@@ -370,6 +399,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '11:20-12:05',
 			speakers: ['Jennifer Curtis'],
 			title: 'Educaring® as a Foundation for Play and Lifelong Learning',
 			description:
@@ -377,13 +407,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
-			speakers: ['Michelle Semrad Barrera, M.Ed, M.fA'],
-			title: 'A Play filled approach to early literacy',
-			description:
-				"Play is foremost self-chosen and self-directed. When we observe children's play, we can discover a myriad of ways to expand upon the early literacy work in which they engage while honoring the play. In this workshop, we will examine how we can follow children's lead to foster a passion for language, stories, and learning.",
-		},
-		{
-			day: 'saturday',
+			time: '11:20-12:05',
 			speakers: [
 				'Jessica Miller, ICCE, CLD, CLC',
 				'Kavitha Vishwanathan, MA',
@@ -395,6 +419,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '11:20-12:05',
 			speakers: ['Merrill Page'],
 			title:
 				'the biology of play: tools for regulating your nervous system to optimize play',
@@ -403,6 +428,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '11:20-12:05',
 			speakers: ['Marci Silverberg, MPT, PPCES & Caitlin MONDT, PT, DPT'],
 			title: 'pelvic health in postpartum women: Common, not normal',
 			description:
@@ -410,6 +436,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '1:55-3.35',
 			speakers: ['Barbara Crowley'],
 			title:
 				'beyond basic stem: strategies to grow young scientists by intergrating science, technology, engineering and math into regular preschool curriculum',
@@ -418,6 +445,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '1:55-3.35',
 			speakers: ['Aki Raymer, M.A.'],
 			title: 'positive discipline for preschoolers',
 			description:
@@ -425,6 +453,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '1:55-2:40',
 			speakers: ['Wendolyn Bird'],
 			title:
 				'play with discipline - discipline with play: speak the language of children & children will follow yours',
@@ -433,6 +462,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '1:55-2:40',
 			speakers: ['Jocelyn Robertson, M.A.', 'Ana Chaidez'],
 			title: 'emergent curriculum',
 			description:
@@ -440,6 +470,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '1:55-2:40',
 			speakers: ['Oshik Maoz-Metzl'],
 			title: 'motivation matters: empowering preschoolers and their parents',
 			description:
@@ -447,6 +478,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '1:55-2:40',
 			speakers: ['Diana Tauder'],
 			title: 'Filling your schools & making a difference',
 			description:
@@ -454,6 +486,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '2:50-3:35',
 			speakers: ['Lisa Silva Willoughby', 'Diego Silva de Frietas'],
 			title: 'capoeira for preschoolers',
 			description:
@@ -461,6 +494,15 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '2:50-3:35',
+			speakers: ['Jennifer Curtis'],
+			title: 'Educaring® as a Foundation for Play and Lifelong Learning',
+			description:
+				'An introduction to the Educaring® Approach to caregiving in the early years (0 - 6) with a focus on play as an essential element of human development. The lifelong benefits of practicing the Educaring principles of Time for Uninterrupted Play and Freedom to Explore, plus tips for providing an environment that invites and supports authentic, child-initiated play in the early years, will be shared along with a general overview of the Educaring Approach to parenting and caregiving as originated by Magda Gerber, founder of Resources for Infant Educarers® (RIE®).\n*Please note this workshop is being offered twice!',
+		},
+		{
+			day: 'saturday',
+			time: '2:50-3:35',
 			speakers: ['Alison Tucker, M.ED', 'Donnie Weaver'],
 			title: 'autism demystification',
 			description:
@@ -468,6 +510,15 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '2:50-3:35',
+			speakers: ['Marci Silverberg, MPT, PPCES & Caitlin MONDT, PT, DPT'],
+			title: 'pelvic health in postpartum women: Common, not normal',
+			description:
+				"A staggering 30-50% of women have various types of issues with the pelvic floor, ranging from leaking with sneezing, painful sex, pressure and pain, which are often ignored. As the pelvic floor muscles are actually part of the deep core, we need to break the stigma about this elusive topic. We need clarity about what is actually normal in terms of pelvic health, what isn't, and what your options are. Let's break barriers in the field of Women's Health, educate ourselves about normal bladder, bowel and sexual function- and start living our lives with the optimal health we deserve!\n*Please note this workshop is being offered twice",
+		},
+		{
+			day: 'saturday',
+			time: '2:50-3:35',
 			speakers: ['Rebecca Nowlen'],
 			title: 'the benefits of five years of play',
 			description:
@@ -475,6 +526,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '3:45-4:30',
 			speakers: ['Cait Goss, M.A.'],
 			title: 'the magic of process art',
 			description:
@@ -482,6 +534,7 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '3:45-4:30',
 			speakers: ['Laurel Shear'],
 			title:
 				'learn how to tap the pain away so we can play: eft tapping therapy for children, parents, and teachers',
@@ -490,18 +543,20 @@ export const data: {
 		},
 		{
 			day: 'saturday',
+			time: '3:45-4:30',
+			speakers: ['Stephan Goyne'],
+			title: 'active play on a budget: risky play and basic gymnastics',
+			description:
+				'Join us for an engaging and practical workshop designed for co-op teachers and parents!! Discover how to foster resilience, creativity, and physical fitness in children through risky play and basic gymnastics—all while working within shoestring budgets.\nWhat You’ll Learn:\nUnderstand the benefits of risky play. Explore basic gymnastics movements.\nGet resourceful with low-cost equipment ideas.\n\nDon’t miss this opportunity to empower young minds through play!',
+		},
+		{
+			day: 'saturday',
+			time: '3:45-4:30',
 			speakers: ['Justine Chadly'],
 			title:
 				'harmony in early learning: a purposeful playshop for parents and educators',
 			description:
 				'"Harmony in Early Learning," is  a playshop designed for those seeking to enrich the early childhood experience through playful music and movement practices. In this immersive playshop, participants will embark on a melodic and rhythmic journey that seamlessly integrates the world of music with purposeful play.',
-		},
-		{
-			day: 'saturday',
-			speakers: ['Stephan Goyne'],
-			title: 'active play on a budget: risky play and basic gymnastics',
-			description:
-				'Join us for an engaging and practical workshop designed for co-op teachers and parents!! Discover how to foster resilience, creativity, and physical fitness in children through risky play and basic gymnastics—all while working within shoestring budgets.\nWhat You’ll Learn:\nUnderstand the benefits of risky play. Explore basic gymnastics movements.\nGet resourceful with low-cost equipment ideas.\n\nDon’t miss this opportunity to empower young minds through play!',
 		},
 	],
 };

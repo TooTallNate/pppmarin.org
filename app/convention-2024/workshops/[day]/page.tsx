@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import { data, type Workshop as IWorkshop } from '../../data';
+import { toSlug } from '../../speakers/slug';
 
 export const dynamicParams = false;
 
@@ -28,9 +30,15 @@ export default async function WorkshopsDayPage({
 }
 
 function Workshop({ workshop }: { workshop: IWorkshop }) {
-	const speakers = Array.isArray(workshop.speakers)
-		? workshop.speakers
-		: [workshop.speaker];
+	const speakers = (
+		Array.isArray(workshop.speakers) ? workshop.speakers : [workshop.speaker]
+	).map((name) => {
+		const s = data.speakers.find((s) => s.name === name);
+		if (!s) {
+			console.log('Missing speaker data for %s', name);
+		}
+		return s || { name };
+	});
 	const desc = workshop.description
 		.split('\n')
 		// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
@@ -40,13 +48,31 @@ function Workshop({ workshop }: { workshop: IWorkshop }) {
 			<h4 className='uppercase text-convention-sunset font-bold'>
 				{workshop.title}
 			</h4>
-			<div className='flex flex-col'>
-				{speakers.map((s) => (
-					<h4 key={s} className='uppercase text-convention-tangerine font-bold'>
-						{s}
-					</h4>
-				))}
+			<div className='flex flex-col gap-2 uppercase font-bold'>
+				{speakers.map((s) => {
+					if (!s) {
+						console.log(`Missing speaker: ${workshop.title}`);
+						return null;
+					}
+					let name: React.ReactNode = s.name;
+					if ('image' in s) {
+						name = (
+							<Link
+								href={`/convention-2024/speakers/${toSlug(s.name)}`}
+								className='hover:underline'
+							>
+								{s.name}
+							</Link>
+						);
+					}
+					return (
+						<h4 key={s.name} className='text-convention-tangerine'>
+							{name}
+						</h4>
+					);
+				})}
 			</div>
+			<h4 className='uppercase font-bold text-gray-600'>{workshop.time}</h4>
 			{desc}
 		</div>
 	);
