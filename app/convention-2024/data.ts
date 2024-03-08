@@ -33,7 +33,7 @@ export const data: {
 		},
 		{
 			name: 'Julie Nicholson, Ph.D, MBA',
-			image: 'Julie Nicholson.jpg',
+			image: 'Julie Nicholson.png',
 			keynote: 'saturday',
 			time: '9:00-10:15',
 			description:
