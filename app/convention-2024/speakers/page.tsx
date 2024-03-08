@@ -26,10 +26,9 @@ function Speaker({ speaker }: { speaker: ISpeaker }) {
 
 export default async function Speakers() {
 	'use server';
-	const speakers = data.speakers.filter((s) => !('keynote' in s)) as ISpeaker[];
 	return (
 		<>
-			{speakers.map((s) => (
+			{data.speakers.map((s) => (
 				<Speaker key={s.image} speaker={s} />
 			))}
 		</>
