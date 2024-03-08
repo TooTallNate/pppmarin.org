@@ -25,8 +25,7 @@ function MobileMenu() {
 
 function DesktopMenu() {
 	return (
-		<span className='hidden md:flex gap-4'>
-			<MenuLink href='/'>Home</MenuLink>
+		<span className='flex flex-col md:flex-row gap-2 md:gap-4 text-right text-sm md:text-lg'>
 			<MenuLink href='/our-schools'>Our Schools</MenuLink>
 			<MenuLink href='/convention-2024'>Convention 2024</MenuLink>
 		</span>
