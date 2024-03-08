@@ -36,7 +36,7 @@ function Workshop({ workshop }: { workshop: IWorkshop }) {
 		// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 		.map((l, i) => <p key={i}>{l}</p>);
 	return (
-		<div className='flex flex-col gap-4 font-montserrat font-normal'>
+		<div className='flex flex-col gap-4 font-montserrat font-normal max-w-screen-sm'>
 			<h4 className='uppercase text-convention-sunset font-bold'>
 				{workshop.title}
 			</h4>
