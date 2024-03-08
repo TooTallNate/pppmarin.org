@@ -1,4 +1,5 @@
 import { Address } from './address';
+import { ScheduleLink } from './schedule-link';
 
 export default function Welcome() {
 	return (
@@ -19,6 +20,7 @@ export default function Welcome() {
 					educators. We hope it is an enjoyable and fulfilling experience for
 					every attendee.
 				</p>
+				<ScheduleLink />
 			</div>
 			<div className='pt-10'>
 				<Address />
