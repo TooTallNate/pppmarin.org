@@ -349,7 +349,7 @@ export const data: {
 		{
 			day: 'friday',
 			time: '3:10-3:55',
-			speaker: 'Jessica Long',
+			speaker: 'Jessica Chivers Long',
 			title: 'perimenopause 101',
 			description:
 				'When it comes to perimenopause, there are LOTS of questions. What exactly is perimenopause? When does it start? How do I know if I am in perimenopause? How long does it last? Why are there SO MANY symptoms? What can I do to feel like myself again? If any of these questions resonate with you, be sure to join the Perimenopause 101 breakout session led by Jessica Long, Hormone Health Coach and founder of Belong Wellness. In this session, tailored for women in their late 30s – early 50s, Jessica will answer all of these questions and discuss how to alleviate your symptoms. Perimenopause can be confusing, challenging and frustrating. But, you are NOT alone and you don’t have to suffer. Join this workshop to learn what exactly is happening with your hormones, how you can alleviate your symptoms and gain a sense of belonging knowing that so many other women are experiencing what you are.',
